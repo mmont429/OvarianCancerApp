@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ovariancancerapp-dev-160742-authRole",
+      "UnauthRoleArn": "arn:aws:iam::244715020058:role/amplify-ovariancancerapp-dev-160742-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::244715020058:role/amplify-ovariancancerapp-dev-160742-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-ovariancancerapp-dev-160742-deployment",
+      "UnauthRoleName": "amplify-ovariancancerapp-dev-160742-unauthRole",
+      "StackName": "amplify-ovariancancerapp-dev-160742",
+      "StackId": "arn:aws:cloudformation:us-east-2:244715020058:stack/amplify-ovariancancerapp-dev-160742/3ee27ca0-14a2-11eb-a4eb-0656208217bc",
+      "AmplifyAppId": "dffuplmogf7yz"
+    }
+  }
+}
