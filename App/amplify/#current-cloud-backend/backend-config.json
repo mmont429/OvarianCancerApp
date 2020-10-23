@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "ovariancancerappb7996f22": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
