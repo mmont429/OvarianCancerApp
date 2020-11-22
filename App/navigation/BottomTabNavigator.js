@@ -6,7 +6,6 @@ import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import Pantry from '../screens/Pantry';
 import ShoppingListScreen from '../screens/ShoppingListScreen';
-import ContactUsScreen from '../screens/ContactUsScreen';
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
