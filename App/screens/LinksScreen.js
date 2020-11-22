@@ -13,62 +13,22 @@ import { State } from 'react-native-gesture-handler';
 import { createStackNavigator } from '@react-navigation/stack';
 import  { NavigationContainer } from '@react-navigation/native'
 
-function Settings() {
-  return(
-    <View>
-      <Text>
-        Welcome to settings
-      </Text>
-    </View>
-  );
-}
 
-const Stack = createStackNavigator;
 function LinksScreen({ navigation }) {
   return(
-    <View>
-      <Button 
-        title="press"
-        onPres={()=> navigation.navigate("User")}
-      />
-    </View>
-  );
-
-  /*
-  //Using normal stack navigator
-  return(
-    <NavigationContainer independent={true}>
-      <Stack.Navigator initialRouteName="Settings">
-        <Stack.Screen name = "Settings" component = {Settings} />
-        <Stack.Screen name = "Profile" component = {User} />
-
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-  */
-
-  //This is using react native settings page
-  /*
-  return (
     <ReactNativeSettingsPage>
-      <SectionRow text='Usage'>
+      <SectionRow text='Account Settings'>
         <NavigateRow
           text='Account Information'
+          onPressCallback={()=> navigation.navigate('User')}
         />
-        <SliderRow
-          text='Slider Row'
-        />
-        <CheckRow 
-          text='Check Row'
-        />
-        <SwitchRow 
-          text='Dark Mode'
+        <NavigateRow
+          text='Logout'
         />
       </SectionRow>
-      <Text style={styles.test} >Hello</Text>
+      
     </ReactNativeSettingsPage>
-  ); 
-  */
+  );
 }
 
 export default LinksScreen;

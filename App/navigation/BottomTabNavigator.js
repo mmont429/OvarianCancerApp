@@ -1,72 +1,50 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import * as React from 'react';
 
+import { HomeStackNavigator, SettingStackNavigator, FormStackNavigator, InfoStackNavigator } from './StackNavigator'
 import TabBarIcon from '../components/TabBarIcon';
-import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
-import Pantry from '../screens/Pantry';
-import ShoppingListScreen from '../screens/ShoppingListScreen';
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
 
-export default function BottomTabNavigator({ navigation, route }) {
-  // Set the header title on the parent stack navigator depending on the
-  // currently active tab. Learn more in the documentation:
-  // https://reactnavigation.org/docs/en/screen-options-resolution.html
-  navigation.setOptions({ headerTitle: getHeaderTitle(route) });
-
+const BottomTabNavigator = () => {
   return (
     <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
-      <BottomTab.Screen
-        name="Home"
-        component={HomeScreen}
+      <BottomTab.Screen 
+        name="Home" 
+        component={HomeStackNavigator}
         options={{
           title: 'Home',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-home" />,
         }}
       />
-      <BottomTab.Screen
-        name="Pantry"
-        component={Pantry}
+      <BottomTab.Screen 
+        name="Form" 
+        component={FormStackNavigator}
         options={{
           title: 'Pantry',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
         }}
-
       />
-      <BottomTab.Screen
-        name="ShoppingList"
-        component={ShoppingListScreen}
+      <BottomTab.Screen 
+        name="Info" 
+        component={InfoStackNavigator} 
         options={{
           title: 'Shopping List',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-list" />,
         }}
-
       />
-      <BottomTab.Screen
-        name="Links"
-        component={LinksScreen}
+      <BottomTab.Screen 
+        name="Settings" 
+        component={SettingStackNavigator} 
         options={{
           title: 'Settings',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-settings" />,
         }}
       />
     </BottomTab.Navigator>
-  );
+  )
 }
 
-function getHeaderTitle(route) {
-  const routeName = route.state?.routes[route.state.index]?.name ?? INITIAL_ROUTE_NAME;
+export default BottomTabNavigator;
 
-  switch (routeName) {
-    case 'Home':
-      return 'Recipes';
-    case 'Pantry':
-      return 'Your Pantry';
-    case 'ShoppingList':
-      return 'Your Shopping List';
-    case 'Links':
-      return 'Settings';
-  }
-}
