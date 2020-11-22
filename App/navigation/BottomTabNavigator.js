@@ -62,11 +62,11 @@ function getHeaderTitle(route) {
 
   switch (routeName) {
     case 'Home':
-      return 'Recipes';
+      return 'Home';
     case 'Pantry':
-      return 'Your Pantry';
+      return 'Form';
     case 'ShoppingList':
-      return 'Your Shopping List';
+      return 'Information';
     case 'Links':
       return 'Settings';
   }
