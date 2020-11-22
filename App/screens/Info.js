@@ -2,18 +2,12 @@ import * as WebBrowser from 'expo-web-browser';
 import * as React from 'react';
 import { Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
+import styles from'./screenStyles'
 
-export default function Pantry(){
+export default function Info(){
     return(
         <View style={styles.container}>
-            <Text> Hello there </Text>
+            <Text> Hi </Text>
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-      },
-});
