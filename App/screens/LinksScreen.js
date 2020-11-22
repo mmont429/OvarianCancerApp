@@ -10,8 +10,6 @@ import * as React from 'react';
 import { Text, Button, View } from 'react-native';
 import ReactNativeSettingsPage, { SectionRow, NavigateRow, SliderRow, CheckRow, SwitchRow } from 'react-native-settings-page';
 import { State } from 'react-native-gesture-handler';
-import { createStackNavigator } from '@react-navigation/stack';
-import  { NavigationContainer } from '@react-navigation/native'
 
 
 function LinksScreen({ navigation }) {
@@ -20,7 +18,7 @@ function LinksScreen({ navigation }) {
       <SectionRow text='Account Settings'>
         <NavigateRow
           text='Account Information'
-          onPressCallback={()=> navigation.navigate('User')}
+          onPressCallback={()=> navigation.navigate('Profile')}
         />
         <NavigateRow
           text='Logout'
