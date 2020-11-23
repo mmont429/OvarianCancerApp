@@ -18,6 +18,11 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 10,
         marginBottom: 20,
+    },
+    logout: {
+        color: 'red',
+        textAlign: 'right',
+        backgroundColor: '#F5F5F5'
     }
 });
 

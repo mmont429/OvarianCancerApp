@@ -20,9 +20,9 @@ const HomeStackNavigator = () => {
 // Settings page
 const SettingStackNavigator = () => {
     return (
-      <Stack.Navigator initialRouteName={'LinkScreen'} >
-        <Stack.Screen name="LinkScreen" component={LinkScreen} />
-        <Stack.Screen name="User" component={User} />
+      <Stack.Navigator initialRouteName={'Settings'} >
+        <Stack.Screen name="Settings" component={LinkScreen} />
+        <Stack.Screen name="Profile" component={User} />
       </Stack.Navigator>
     );
   }
