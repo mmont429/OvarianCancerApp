@@ -13,6 +13,6 @@ Start the app
 `expo start`
 
 __You may be asked to download some dependencies__ which you can do with:
-`npm install ...` or `yarn add ...`
+`npm install expo-cli` or `yarn add ...`
 
 
