@@ -23,7 +23,7 @@ const BottomTabNavigator = () => {
         component={FormStackNavigator}
         options={{
           title: 'Form',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-list-box" />,
         }}
       />
       <BottomTab.Screen 
@@ -31,7 +31,7 @@ const BottomTabNavigator = () => {
         component={InfoStackNavigator} 
         options={{
           title: 'Info',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-list" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-information-circle-outline" />,
         }}
       />
       <BottomTab.Screen 
