@@ -4,6 +4,7 @@
 //import { RectButton, ScrollView } from 'react-native-gesture-handler';
 //import { NavigationContainer, StackActions } from '@react-navigation/native';
 //import { createStackNavigator } from '@react-navigation/stack';
+import { Auth } from 'aws-amplify';
 import styles from'./screenStyles'
 import User from './User'
 import * as React from 'react';
@@ -22,6 +23,7 @@ function LinksScreen({ navigation }) {
         />
         <NavigateRow
           text='Logout'
+          onPressCallback={() => Auth.signOut({ global:true })}
         />
       </SectionRow>
       
