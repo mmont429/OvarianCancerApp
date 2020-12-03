@@ -1,0 +1,36 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ovariancancerapp-dev-175748-authRole",
+      "UnauthRoleArn": "arn:aws:iam::244715020058:role/amplify-ovariancancerapp-dev-175748-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::244715020058:role/amplify-ovariancancerapp-dev-175748-authRole",
+      "Region": "ca-central-1",
+      "DeploymentBucketName": "amplify-ovariancancerapp-dev-175748-deployment",
+      "UnauthRoleName": "amplify-ovariancancerapp-dev-175748-unauthRole",
+      "StackName": "amplify-ovariancancerapp-dev-175748",
+      "StackId": "arn:aws:cloudformation:ca-central-1:244715020058:stack/amplify-ovariancancerapp-dev-175748/a5b1b970-2f71-11eb-9be0-06edfed6ea7a",
+      "AmplifyAppId": "d1ohp9uf9ntzcf"
+    }
+  },
+  "auth": {
+    "ovariancancerapp7d728c8a": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "ca-central-1_IiG0TPOmh",
+        "AppClientIDWeb": "493ka8jld6kb4i39oo5pahe9p8",
+        "AppClientID": "snupsohnmsn26h0qo82qck2c0",
+        "IdentityPoolId": "ca-central-1:daa51f24-eafd-4b23-b6cd-5b0186930ae2",
+        "IdentityPoolName": "ovariancancerapp7d728c8a_identitypool_7d728c8a__dev",
+        "UserPoolName": "ovariancancerapp7d728c8a_userpool_7d728c8a"
+      },
+      "lastPushTimeStamp": "2020-12-02T01:36:18.491Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-ovariancancerapp-dev-175748-deployment/amplify-cfn-templates/auth/ovariancancerapp7d728c8a-cloudformation-template.yml",
+        "logicalId": "authovariancancerapp7d728c8a"
+      }
+    }
+  }
+}
