@@ -5,8 +5,9 @@ import styles from'./screenStyles'
 export default class Info extends React.Component{
     render(){
         return(
-            <View style={styles.container}>
+            <View style={styles.containerML}>
                 <Text style={styles.test}> Machine Learning  </Text>
+                <Text style={styles.mlInfo}>Likelyhood: </Text>
             </View>
         );
     }

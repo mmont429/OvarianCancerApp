@@ -7,11 +7,22 @@ const styles = StyleSheet.create({
         color:'blue',
         backgroundColor:'#fff'
     },
+    mlInfo: {
+        textAlign: 'center',
+        textAlignVertical: 'bottom',
+        position: 'absolute',
+        bottom: 100,
+        left: 120
+    },
     container: {
         flex: 1,
         backgroundColor: '#fff'
     },
-        contentContainer: {
+    containerML: {
+        flex: 1,
+        backgroundColor:'#fff'
+    },
+    contentContainer: {
         paddingTop: 30,
     },
     welcomeContainer: {
