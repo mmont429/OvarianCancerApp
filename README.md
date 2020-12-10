@@ -16,3 +16,6 @@ __You may be asked to download some dependencies__ which you can do with:
 `npm install expo-cli` or `yarn add ...`
 
 
+You must install amplify globally `npm i -g @aws-amplify/cli`
+and then locally `npm install --save aws-amplify aws-amplify-react-native`
+to run the login portion of the code.
