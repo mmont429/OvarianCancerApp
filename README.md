@@ -1,7 +1,7 @@
 # OvarianCancerApp
 A mobile application that takes inputs such as symptoms and tests from doctors. It uses a neural network to determine the best course of action. This app continuously learns and hopefully be able to determine the likely hood of a patient having ovarian cancer.
 
-## __Please read the following all of the following documentation before you try to run the app. If you have any issues let me know with a screenshot and I can try to help you.__
+## __Please read ALL of the following documentation before you try to run the app.__ If you have any issues let me know with a screenshot and I can try to help you.
 
 Start by cloning the repository:
 `git clone https://github.com/mmont429/OvarianCancerApp`
