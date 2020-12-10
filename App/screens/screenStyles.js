@@ -34,6 +34,22 @@ const styles = StyleSheet.create({
         color: 'red',
         textAlign: 'right',
         backgroundColor: '#F5F5F5'
+    },
+    welcomeImage: {
+        width: 100,
+        height: 80,
+        resizeMode: 'contain',
+        marginTop: 2,
+        marginLeft: -10,
+    },
+    input: {
+        borderWidth: 1,
+        borderColor: '#ddd',
+        padding: 10,
+        fontSize: 18,
+        borderRadius: 6,
+        marginHorizontal: 100,
+        marginVertical: 20
     }
 });
 
