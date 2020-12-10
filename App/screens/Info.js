@@ -1,13 +1,14 @@
-import * as WebBrowser from 'expo-web-browser';
 import * as React from 'react';
-import { Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import { Text, View } from 'react-native';
 import styles from'./screenStyles'
 
-export default function Info(){
-    return(
-        <View style={styles.container}>
-            <Text> Hi </Text>
-        </View>
-    );
+export default class Info extends React.Component{
+    render(){
+        return(
+            <View style={styles.containerML}>
+                <Text style={styles.test}> Machine Learning  </Text>
+                <Text style={styles.mlInfo}>Likelyhood: </Text>
+            </View>
+        );
+    }
 }
