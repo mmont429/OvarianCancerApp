@@ -30,13 +30,13 @@ export default function HomeScreen() {
         </View>
 
         <View style={{flex: 1, backgroundColor: 'white', paddingTop: 20}}>
-          <Text style={{fontSize: 24, fontWeight: '700', paddingHorizontal: 20}}>
+          <Text style={{fontSize: 24, fontWeight: '700', paddingHorizontal: 50, textAlign:"center"}}>
             Welcome to the Ovarian Cancer App
           </Text>
         </View>
 
         <View style={{marginTop: 40, paddingHorizontal: 20 }}>
-          <Text style={{fontSize: 22, fontWeight: '500', paddingHorizontal: 30}}>
+          <Text style={{fontSize: 16, fontWeight: '500', paddingHorizontal: 30, textAlign:"center"}}>
             Information on Ovarian Cancer
           </Text>
           <View style={{width: width-40, height: 200, marginTop: 20, backgroundColor: '#fff' }}>

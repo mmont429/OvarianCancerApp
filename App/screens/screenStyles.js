@@ -48,8 +48,10 @@ const styles = StyleSheet.create({
         padding: 10,
         fontSize: 18,
         borderRadius: 6,
-        marginHorizontal: 100,
-        marginVertical: 20
+        marginHorizontal: 20,
+        marginVertical: 20,
+        alignContent:"flex-start",
+        alignItems:"flex-start"
     }
 });
 

@@ -23,7 +23,7 @@ const BottomTabNavigator = () => {
         component={FormStackNavigator}
         options={{
           title: 'Form',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-list-box" />,
+          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-checkbox" />,
         }}
       />
       <BottomTab.Screen 
