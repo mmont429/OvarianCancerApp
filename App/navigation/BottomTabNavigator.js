@@ -15,7 +15,7 @@ const BottomTabNavigator = () => {
         component={HomeStackNavigator}
         options={{
           title: 'Home',
-          tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-home" />,
+          tabBarIcon: ({ tintColor, focused }) => <TabBarIcon focused={focused} name="md-home"  color={tintColor}/>,
         }}
       />
       <BottomTab.Screen 
@@ -48,3 +48,8 @@ const BottomTabNavigator = () => {
 
 export default BottomTabNavigator;
 
+{
+  tabBarOptions: {
+    activeTintColor: 'red'
+  }
+}

@@ -1,19 +1,8 @@
-import * as WebBrowser from 'expo-web-browser';
 import * as React from 'react';
-import {
-  Image, 
-  Platform, 
-  StyleSheet, 
-  Text, 
-  TouchableOpacity, 
-  View,
-  StatusBar,
-  SafeAreaView,
-  TextInput,
-  Dimensions} from 'react-native';
+import {Image,Text, TouchableOpacity, View,Dimensions, Linking, Button} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import styles from'./screenStyles'
-import { MonoText } from '../components/StyledText';
+import styles from'./screenStyles';
+import { NavigationContainer } from '@react-navigation/native';
 
 const {height, width} = Dimensions.get('window')
 
@@ -35,20 +24,41 @@ export default function HomeScreen() {
           </Text>
         </View>
 
-        <View style={{marginTop: 40, paddingHorizontal: 20 }}>
+        <View style={{marginTop: 10, paddingHorizontal: 20 }}>
           <Text style={{fontSize: 16, fontWeight: '500', paddingHorizontal: 30, textAlign:"center"}}>
-            Information on Ovarian Cancer
+            A machine learning Ovarian Cancer recommendation software
           </Text>
-          <View style={{width: width-40, height: 200, marginTop: 20, backgroundColor: '#fff' }}>
-            <Image 
-            style={{flex: 1, height: null, width: null, resizeMode: 'contain', borderRadius: 5, borderWidth: 3, borderColor: '#dddfff'}}
-            source={require('../assets/images/symptoms.png')}
-            />
+          <View style={{width: width -40, height: 200, marginTop: 20, backgroundColor: '#fff', marginTop:50 }}>
+            {/*Image Properties*/}
+            <TouchableOpacity 
+              onPress={() => Linking.openURL('https://ovariancanada.org/About-Ovarian-Cancer')} 
+              style={{flex: 1, height: 20, width: null, resizeMode: 'contain'}} 
+            >
+              <Image 
+                style={{flex: 1, height: 20, width: null, resizeMode: 'contain', borderRadius: 5, borderWidth: 2, borderColor: '#008080'}}
+                source={require('../assets/images/symptoms.png')}
+              />
+            </TouchableOpacity>
+            <Text style={{textAlign: "center", fontSize: 10, paddingTop: 5}}>
+              Click the image above to visit Ovarian Cancer Canada for more information
+            </Text>
           </View>
+          <Text style={styles.bottomTextInst}>
+            Please head to the Form page to begin
+          </Text>
+          <Text style={styles.bottomText}>
+            Ovarian cancer is prominent cancer that effects many women. The American Cancer Society
+            estimates over 21,000 women will be diagnosed this year and over 13,000 will die from ovarian cancer in the US.
+            A large reason for a fatality rater over 50% is the lack of understanding of the cancer causing late detection. By using this
+            app you will allow a machine learning algorithm to assist with prognoses. The app will continue to learn 
+            from inputted data.
+          </Text>
         </View>
 
       </ScrollView>
     </View>
   );
+
+  
 }
 

@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 const HomeStackNavigator = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name ="Home" component={HomeScreen} />
+      <Stack.Screen name ="Home" component={HomeScreen} options={{ headerStyle: { backgroundColor:'rgba(0, 128, 128, 0.74)', borderWidth:1, borderRadius: 5, borderColor:'rgba(0, 128, 128, 0.74)'}, headerTintColor: '#fff'}}/>
     </Stack.Navigator>
   )
 }

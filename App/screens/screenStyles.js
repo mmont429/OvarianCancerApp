@@ -2,38 +2,57 @@ import {StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
 
+    //ML Page
     test: {
-        textAlign: 'center',
+        //textAlign: "left",
         color:'blue',
-        backgroundColor:'#fff'
+        marginTop: 10,
+        marginHorizontal: 50,
+        borderWidth: 1,
+        borderRadius: 10,
+        paddingLeft: 10,
+        alignItems: "flex-start",
+        backgroundColor:"#eaeaea",
+        borderColor:"#eaeaea"
     },
+    text: {
+        color: "#000",
+        fontSize: 14,
+        fontWeight: "bold"
+      },
     mlInfo: {
         textAlign: 'center',
-        textAlignVertical: 'bottom',
-        position: 'absolute',
-        bottom: 100,
-        left: 120
+        marginTop: 10,
+        marginBottom: 5
     },
-    container: {
-        flex: 1,
-        backgroundColor: '#fff'
+    mlTitle: {
+        textAlign: 'center',
+        marginTop: 10,
+        marginBottom: 5,
+        fontSize: 20,
+        fontWeight: ('bold'),
+    },
+    mlText: {
+        textAlign: 'left',
+        marginTop: 10,
+        marginBottom: 5
     },
     containerML: {
         flex: 1,
         backgroundColor:'#fff'
     },
-    contentContainer: {
-        paddingTop: 30,
+    mlRec:{
+        flex: 1,
+        alignItems: "center",
+        paddingTop: 50,
     },
+    // End of ML page
+
+    // Home page
     welcomeContainer: {
         alignItems: 'center',
         marginTop: 10,
         marginBottom: 20,
-    },
-    logout: {
-        color: 'red',
-        textAlign: 'right',
-        backgroundColor: '#F5F5F5'
     },
     welcomeImage: {
         width: 100,
@@ -41,6 +60,29 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         marginTop: 2,
         marginLeft: -10,
+    },
+    bottomTextInst: {
+        textAlign: "center",
+        paddingTop: 20,
+        fontWeight: "bold"
+    },
+    bottomText: {
+        textAlign: "center",
+        marginTop: 40
+    },
+    // End of home page
+
+    container: {
+        flex: 1,
+        backgroundColor: '#fff'
+    },
+    contentContainer: {
+        paddingTop: 30,
+    },
+    logout: {
+        color: 'red',
+        textAlign: 'right',
+        backgroundColor: '#F5F5F5'
     },
     input: {
         borderWidth: 1,
