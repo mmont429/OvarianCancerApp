@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native'
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const styles = StyleSheet.create({
 
@@ -12,8 +13,8 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         paddingLeft: 10,
         alignItems: "flex-start",
-        backgroundColor:"#eaeaea",
-        borderColor:"#eaeaea"
+        backgroundColor:"#3FBFBF",
+        borderColor:"#3FBFBF"
     },
     text: {
         color: "#000",
@@ -35,7 +36,8 @@ const styles = StyleSheet.create({
     mlText: {
         textAlign: 'left',
         marginTop: 10,
-        marginBottom: 5
+        marginBottom: 5,
+        color: '#fff'
     },
     containerML: {
         flex: 1,
