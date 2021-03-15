@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 const HomeStackNavigator = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name ="Home" component={HomeScreen} />
+      <Stack.Screen name ="Home" component={HomeScreen} options={{ headerStyle: { backgroundColor:'#3FBFBF', borderWidth:1, borderRadius: 10, borderColor:'rgba(0, 128, 128, 0.74)'}, headerTintColor: '#fff'}}/>
     </Stack.Navigator>
   )
 }
@@ -38,7 +38,7 @@ const SettingStackNavigator = () => {
   const InfoStackNavigator = () => {
     return (
       <Stack.Navigator>
-        <Stack.Screen name="Info" component={Info} />
+        <Stack.Screen name="Info" component={Info} options={{ headerStyle: { backgroundColor:'#3FBFBF', borderWidth:1, borderRadius: 10, borderColor:'rgba(0, 128, 128, 0.74)'}, headerTintColor: '#fff'}}/>
       </Stack.Navigator>
     );
   }
