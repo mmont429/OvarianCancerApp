@@ -21,8 +21,8 @@ const HomeStackNavigator = () => {
 const SettingStackNavigator = () => {
     return (
       <Stack.Navigator initialRouteName={'Settings'} >
-        <Stack.Screen name="Settings" component={LinkScreen} />
-        <Stack.Screen name="Profile" component={User} />
+        <Stack.Screen name="Settings" component={LinkScreen} options={{ headerStyle: { backgroundColor:'#3FBFBF', borderWidth:1, borderRadius: 10, borderColor:'rgba(0, 128, 128, 0.74)'}, headerTintColor: '#fff'}}/>
+        <Stack.Screen name="Profile" component={User} options={{ headerStyle: { backgroundColor:'#3FBFBF', borderWidth:1, borderRadius: 10, borderColor:'rgba(0, 128, 128, 0.74)'}, headerTintColor: '#fff'}}/>
       </Stack.Navigator>
     );
   }
@@ -30,7 +30,7 @@ const SettingStackNavigator = () => {
   const FormStackNavigator = () => {
     return (
       <Stack.Navigator>
-        <Stack.Screen name="Form" component={Form} />
+        <Stack.Screen name="Form" component={Form} options={{ headerStyle: { backgroundColor:'#3FBFBF', borderWidth:1, borderRadius: 10, borderColor:'rgba(0, 128, 128, 0.74)'}, headerTintColor: '#fff'}}/>
       </Stack.Navigator>
     );
   }
