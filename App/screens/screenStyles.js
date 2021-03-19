@@ -74,6 +74,12 @@ const styles = StyleSheet.create({
     },
     // End of home page
 
+    // Form Page
+    input: {
+        borderWidth:1
+    },
+    // End of form page
+
     container: {
         flex: 1,
         backgroundColor: '#fff'
