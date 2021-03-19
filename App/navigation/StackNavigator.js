@@ -6,6 +6,7 @@ import HomeScreen from "../screens/HomeScreen"
 import User from "../screens/User"
 import Form from "../screens/Form"
 import Info from "../screens/Info"
+import Test from "../screens/Test"
 
 const Stack = createStackNavigator();
 
@@ -30,17 +31,20 @@ const SettingStackNavigator = () => {
   const FormStackNavigator = () => {
     return (
       <Stack.Navigator>
-        <Stack.Screen name="Form" component={Form} options={{ headerStyle: { backgroundColor:'#3FBFBF', borderWidth:1, borderRadius: 10, borderColor:'rgba(0, 128, 128, 0.74)'}, headerTintColor: '#fff'}}/>
+        <Stack.Screen 
+          name="Form" 
+          component={Form} 
+          options={{ headerStyle: { backgroundColor:'#3FBFBF', borderWidth:1, borderRadius: 10, borderColor:'rgba(0, 128, 128, 0.74)'}, headerTintColor: '#fff'}}
+        />
+        <Stack.Screen 
+          name="Test"
+          component={Test}
+          options={{ headerStyle: { backgroundColor:'#3FBFBF', borderWidth:1, borderRadius: 10, borderColor:'rgba(0, 128, 128, 0.74)'}, headerTintColor: '#fff'}}
+        />
       </Stack.Navigator>
     );
   }
   // Other page?
-  const InfoStackNavigator = () => {
-    return (
-      <Stack.Navigator>
-        <Stack.Screen name="Info" component={Info} options={{ headerStyle: { backgroundColor:'#3FBFBF', borderWidth:1, borderRadius: 10, borderColor:'rgba(0, 128, 128, 0.74)'}, headerTintColor: '#fff'}}/>
-      </Stack.Navigator>
-    );
-  }
+
   
-  export { HomeStackNavigator, SettingStackNavigator, FormStackNavigator, InfoStackNavigator }; 
+  export { HomeStackNavigator, SettingStackNavigator, FormStackNavigator}; 

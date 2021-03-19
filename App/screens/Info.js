@@ -1,10 +1,11 @@
-import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import React, {Component} from 'react';
+import { Text, View, StyleSheet, Button } from 'react-native';
 import styles from'./screenStyles'
 import { ScrollView } from 'react-native-gesture-handler';
+import Form from './Form';
 
-export default class Info extends React.Component{
-    render(){
+const Info = ({route}) =>{
+
         return(
             <View style={styles.containerML}>
                 <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
@@ -26,17 +27,7 @@ export default class Info extends React.Component{
             </View>
         );
     }
-}
+    
 
-const typography = StyleSheet.create({
-    header: {
-      color: "#61dafb",
-      fontSize: 30,
-      marginBottom: 36
-    }
-  });
-  
-  const flattenStyle = StyleSheet.flatten([
-    styles.text,
-    typography.header
-  ]);
+
+export default Info;
