@@ -50,13 +50,6 @@ const BottomTabNavigator = () => {
         }}
       />
       <BottomTab.Screen 
-        name="Info" 
-        component={InfoStackNavigator} 
-        options={{
-          title: 'Info',
-        }}
-      />
-      <BottomTab.Screen 
         name="Settings" 
         component={SettingStackNavigator} 
         options={{
