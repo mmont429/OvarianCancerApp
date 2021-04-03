@@ -19,8 +19,6 @@ const BottomTabNavigator = () => {
             iconName = 'home-sharp';
           } else if (route.name === 'Form') {
             iconName = 'reader-sharp';
-          } else if (route.name === 'Info'){
-            iconName = 'list-sharp';
           } else if (route.name === 'Settings'){
             iconName = 'settings-sharp'
           }

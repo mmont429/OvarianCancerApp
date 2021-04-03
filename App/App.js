@@ -9,12 +9,14 @@ import { withAuthenticator } from 'aws-amplify-react-native'
 
 import BottomTabNavigator from './navigation/BottomTabNavigator';
 
-const App = () => {
-  return(
-    <NavigationContainer>
-      <BottomTabNavigator/>
-    </NavigationContainer>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <NavigationContainer>
+        <BottomTabNavigator />
+      </NavigationContainer>
+    );
+  }
 }
 
 export default withAuthenticator(App);

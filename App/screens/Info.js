@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
 import styles from'./screenStyles'
 import { ScrollView } from 'react-native-gesture-handler';
-import Form from './Form';
 
 const Info = ({route}) =>{
 
